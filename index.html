@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>Animacija</title>
+    <style>
+        #wrapper {
+                width: 800px;
+                height: 600px;
+                margin: 0 auto;
+                background-color:#050210;
+            }
+
+        
+        #main-container{
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                margin: 100px 200px auto;
+                border: 1px solid;
+                border-color: #b97aff;
+                border-radius: 100%;
+                box-shadow: 0px 0px 14px 12px grey;
+                
+
+            } 
+        #main-container{
+                background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            } 
+        #main-container{
+                transform: translateZ(300px) rotate3d(0, 1, 0, 0deg);
+                transform-style: preserve-3d;
+                animation: rotating 2s linear infinite;
+               
+        }
+
+        @keyframes rotating{
+            from {
+
+                 transform: rotate(0deg);
+                 }
+              to {
+
+                 transform: rotate(360deg);
+                 }
+                 }
+
+        #container{
+                position: absolute;
+                background-color: #0a0424;
+                width: 350px;
+                height: 350px;
+                margin: 125px 225px auto;
+                border: 3px solid;
+                border-color: #050210;
+                border-radius: 100%;
+
+        }
+
+
+
+
+        #mini-container{
+                position: absolute;
+                width: 350px;
+                height: 350px;
+                margin: 125px 225px auto;
+                border: 1px solid;
+                border-color: #b97aff;
+                border-radius: 100%;
+                box-shadow: 0px 0px 14px 12px rgb(7, 2, 39);
+                
+        }   
+        #mini-container{
+            background: repeating-radial-gradient(#050210,#160850);
+            animation: scale 2s linear infinite;
+            
+                }
+
+
+
+
+             @keyframes scale{
+            from{
+                transform: scale(0.1)
+            }
+            to{
+                transform: scale(0.94)
+            }
+             } 
+        
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        
+
+             <div id="main-container">
+
+             </div><!--end #main container-->
+
+               <div id="container"></div>
+
+                    <div id="mini-container">
+            
+                    </div><!--end #mini-container-->
+
+              </div><!--end #container-->
+
+
+    </div><!--end #wrapper-->
+
+</body>
+
+
+</html>
